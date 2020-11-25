@@ -8,7 +8,6 @@ namespace API.Controllers
     public class BuggyController : BaseApiController
     {
         private readonly DataContext _context;
-
         public BuggyController(DataContext context)
         {
             _context = context;
@@ -30,7 +29,6 @@ namespace API.Controllers
 
             return Ok(thing);
         }
-
 
         [HttpGet("server-error")]
         public ActionResult<string> GetServerError()
